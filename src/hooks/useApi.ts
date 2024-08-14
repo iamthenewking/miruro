@@ -2,9 +2,9 @@ import axios from 'axios';
 import { year, getCurrentSeason, getNextSeason } from '../index';
 
 // Utility function to ensure URL ends with a slash
-// function ensureUrlEndsWithSlash(url: string): string {
-//   return url.endsWith('/') ? url : `${url}/`;
-// }
+function ensureUrlEndsWithSlash(url: string): string {
+  return url.endsWith('/') ? url : `${url}/`;
+}
 
 // Adjusting environment variables to ensure they end with a slash
 const BASE_URL = ensureUrlEndsWithSlash(
